@@ -16,6 +16,6 @@ If you want to use my setup:
     * pylint
     * pep8
 
-git clone https://github.com/kpanic/dotvim-python-ide.git $HOME/.vim
+    git clone https://github.com/kpanic/dotvim-python-ide.git $HOME/.vim
 
-ln -s $HOME/.vimrc $HOME/.vim/vimrc
+    ln -s $HOME/.vimrc $HOME/.vim/vimrc
