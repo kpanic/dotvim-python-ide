@@ -33,8 +33,6 @@ let g:miniBufExplModSelTarget = 1
 "let ropevim_vim_completion=1
 "let ropevim_extended_complete=1
 
-set foldlevel=2
-
 set wildmenu
 set wildmode=longest:full
 set wildignore=*.pyc
