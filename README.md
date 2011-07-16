@@ -11,10 +11,12 @@ If you want to use my setup:
 
 # WARNING: backup your $HOME/.vimrc and $HOME/.vim before trying my setup
 
-## DEPENDENCIES
+## Dependencies
 
     * pylint
     * pep8
+
+## Installation
 
     git clone https://github.com/kpanic/dotvim-python-ide.git $HOME/.vim
 
