@@ -19,6 +19,7 @@ If you want to use my setup:
     * pylint
     * pep8
     * pyflakes
+    * pysmell
     * git
     * ruby and vim +ruby (if you want to use command-T) 32bit compiled under
       ubuntu
