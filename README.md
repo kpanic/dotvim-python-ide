@@ -4,6 +4,7 @@ Important features:
 
     * Pyflakes
     * Pylint on save
+    * pysmell
     * pep8
     * NERDTree
     * Taglist
@@ -46,3 +47,15 @@ if you want to recompile also the command-T module do (for 64bit arch(s)):
     cd $HOME/.vim/ruby/command-t
     ruby extconf.rb
     make
+
+to install pysmell just:
+
+    sudo easy_install pysmell
+
+or:
+
+    pip install pysmell
+
+then run:
+
+    pysmell /on/yourproject
