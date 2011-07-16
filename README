@@ -1,0 +1,9 @@
+"Dirty" setup of my python ide:
+
+Important features:
+
+    * Pyflakes
+    * Pylint on save
+    * pep8
+    * NERDTree
+
