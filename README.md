@@ -25,3 +25,7 @@ If you want to use my setup:
     git clone https://github.com/kpanic/dotvim-python-ide.git $HOME/.vim
 
     ln -s $HOME/.vimrc $HOME/.vim/vimrc
+
+## Notes
+
+    command-T segfaults on ubuntu 11.04, you have to update your vim
