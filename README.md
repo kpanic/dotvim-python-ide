@@ -7,6 +7,7 @@ Important features:
     * pep8
     * NERDTree
     * Taglist
+    * command-T (a fast live search on your project files)
 
 If you want to use my setup:
 
