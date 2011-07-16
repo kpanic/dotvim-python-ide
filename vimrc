@@ -33,5 +33,5 @@ set wildmode=longest:full
 set wildignore=*.pyc
 
 
-:noremap <C-left> :bprev<CR>
-:noremap <C-right> :bnext<CR>
+:noremap <C-left> :tabprevious<CR>
+:noremap <C-right> :tabnext<CR>
