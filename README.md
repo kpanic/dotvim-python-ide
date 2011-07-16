@@ -6,6 +6,7 @@ Important features:
     * Pylint on save
     * pep8
     * NERDTree
+    * Taglist
 
 If you want to use my setup:
 
