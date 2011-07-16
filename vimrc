@@ -38,3 +38,7 @@ set foldlevel=2
 set wildmenu
 set wildmode=longest:full
 set wildignore=*.pyc
+
+
+:noremap <C-left> :bprev<CR>
+:noremap <C-right> :bnext<CR>
