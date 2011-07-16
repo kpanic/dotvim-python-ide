@@ -15,6 +15,7 @@ If you want to use my setup:
 
     * pylint
     * pep8
+    * pyflakes
 
 ## Installation
 
