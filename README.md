@@ -20,9 +20,11 @@ If you want to use my setup:
     * pep8
     * pyflakes
     * pysmell
+    * ctags
     * git
     * ruby and vim +ruby (if you want to use command-T) 32bit compiled under
       ubuntu
+    * vim +python
 
 ## Installation
 
