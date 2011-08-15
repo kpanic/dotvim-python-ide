@@ -31,7 +31,3 @@ let g:pyflakes_use_quickfix = 0
 set wildmenu
 set wildmode=longest:full
 set wildignore=*.pyc
-
-
-:noremap <C-left> :tabprevious<CR>
-:noremap <C-right> :tabnext<CR>
