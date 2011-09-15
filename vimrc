@@ -31,3 +31,6 @@ let g:pyflakes_use_quickfix = 0
 set wildmenu
 set wildmode=longest:full
 set wildignore=*.pyc
+
+" Tagbar settings
+let g:tagbar_left = 1
