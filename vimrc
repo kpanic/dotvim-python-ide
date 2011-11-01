@@ -1,6 +1,7 @@
 "set paste
 "let g:rubycomplete_rails = 1
 "autocmd FileType python set omnifunc=pythoncomplete#Complete
+set background=dark
 autocmd FileType python compiler pylint
 autocmd FileType python setlocal omnifunc=pysmell#Complete
 autocmd BufWritePre *py :%s/\s\+$//e
