@@ -5,7 +5,7 @@ set background=dark
 autocmd FileType python compiler pylint
 autocmd FileType python setlocal omnifunc=pysmell#Complete
 autocmd BufWritePre *py :%s/\s\+$//e
-set statusline=%F%m%r%h%w\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
+"set statusline=%F%m%r%h%w\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 "set mouse=a
 
@@ -36,3 +36,8 @@ set wildignore=*.pyc
 
 " Tagbar settings
 let g:tagbar_left = 1
+
+" displays tabs
+set lcs=tab:▒░
+
+set t_Co=256
