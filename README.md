@@ -9,6 +9,7 @@ Important features:
     * NERDTree
     * Taglist
     * command-T (a fast live file search on your project files)
+    * vim-powerline, nice status line
 
 If you want to use my setup:
 
