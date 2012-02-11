@@ -34,6 +34,9 @@ set wildmenu
 set wildmode=longest:full
 set wildignore=*.pyc
 
+" Specific ignore for DVCS/VCS
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
 " Tagbar settings
 let g:tagbar_left = 1
 
