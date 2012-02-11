@@ -41,3 +41,5 @@ let g:tagbar_left = 1
 set lcs=tab:▒░
 
 set t_Co=256
+
+colorscheme candy
