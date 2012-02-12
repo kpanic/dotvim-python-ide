@@ -36,6 +36,15 @@ set wildignore=*.pyc
 
 " Specific ignore for DVCS/VCS
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_by_filename = 1
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_dotfiles = 1
+let g:ctrlp_max_height = 50
+let g:ctrlp_max_files = 0
+let g:ctrlp_lazy_update = 1
+
+
+
 
 " Tagbar settings
 let g:tagbar_left = 1
