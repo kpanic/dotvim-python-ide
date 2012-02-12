@@ -8,7 +8,7 @@ Important features:
     * pep8
     * NERDTree
     * Taglist
-    * command-T (a fast live file search on your project files)
+    * ctrlp (VimScript native fast live file search on your project files)
     * vim-powerline, nice status line
 
 If you want to use my setup:
@@ -23,8 +23,6 @@ If you want to use my setup:
     * pysmell
     * ctags
     * git
-    * ruby and vim +ruby (if you want to use command-T) 32bit compiled under
-      ubuntu
     * vim +python
 
 ## Installation
@@ -33,24 +31,6 @@ If you want to use my setup:
 
     ln -s $HOME/.vimrc $HOME/.vim/vimrc
 
-## Notes
-
-command-T segfaults on ubuntu 11.04, you have to update your vim
-A "hack" is to grab the latest vim source from oneiric
-http://packages.ubuntu.com/oneiric/editors/vim and recompile for example
-with:
-
-    fakeroot debian/rules binary
-
-then:
-
-    sudo dpkg -i vim-*hg*deb vim_7.3.154+hg~74503f6ee649-2ubuntu2_i386.deb
-
-if you want to recompile also the command-T module do (for 64bit arch(s)):
-
-    cd $HOME/.vim/ruby/command-t
-    ruby extconf.rb
-    make
 
 to install pysmell just:
 
