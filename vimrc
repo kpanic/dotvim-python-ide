@@ -1,8 +1,8 @@
 "set paste
 "let g:rubycomplete_rails = 1
 "autocmd FileType python set omnifunc=pythoncomplete#Complete
-set background=dark
 autocmd FileType python compiler pylint
+let g:pylint_onwrite = 0
 autocmd FileType python setlocal omnifunc=pysmell#Complete
 autocmd BufWritePre *py :%s/\s\+$//e
 "set statusline=%F%m%r%h%w\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
@@ -13,7 +13,7 @@ set nobackup
 set expandtab
 set textwidth=79
 set tabstop=8
-set softtabstop=4
+"!set softtabstop=4
 set shiftwidth=4
 set autoindent
 set completeopt=preview,menuone
@@ -53,5 +53,7 @@ let g:tagbar_left = 1
 set lcs=tab:▒░
 
 set t_Co=256
+set title
 
 colorscheme candy
+set background=dark
