@@ -3,9 +3,9 @@
 Important features:
 
     * Pyflakes
-    * Pylint on save
+    * Pylint (F7)
     * pysmell
-    * pep8
+    * pep8 (F7)
     * NERDTree
     * Taglist
     * ctrlp (VimScript native fast live file search on your project files)
@@ -19,6 +19,7 @@ If you want to use my setup:
 
     * pylint
     * pep8
+    * flex8
     * pyflakes
     * pysmell
     * ctags
