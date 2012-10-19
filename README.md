@@ -10,6 +10,7 @@ Important features:
     * Taglist
     * ctrlp (VimScript native fast live file search on your project files)
     * vim-powerline, nice status line
+    * vim-jedi
 
 If you want to use my setup:
 
@@ -25,6 +26,7 @@ If you want to use my setup:
     * ctags
     * git
     * vim +python
+    * jedi
 
 ## Installation
 
