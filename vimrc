@@ -24,7 +24,7 @@ set incsearch
 filetype on
 filetype plugin on
 filetype plugin indent on
-let g:pyflakes_use_quickfix = 0
+let g:pyflakes_use_quickfix = 1
 
 "ropevim
 "let ropevim_vim_completion=1
@@ -43,17 +43,36 @@ let g:ctrlp_max_height = 50
 let g:ctrlp_max_files = 0
 let g:ctrlp_lazy_update = 1
 
-
+set viminfo='10,\"100,:20,%,n~/.viminfo
 
 
 " Tagbar settings
-let g:tagbar_left = 1
+" let g:tagbar_left = 1
 
 " displays tabs
-set lcs=tab:▒░
+" set lcs=tab:▒░
 
 set t_Co=256
 set title
 
-colorscheme candy
+"colorscheme candy
 set background=dark
+
+" syntastic
+set statusline+=%{SyntasticStatuslineFlag()}
+let g:syntastic_check_on_open=1
+
+let g:syntastic_enable_highlighting = 0
+set wmh=0
+
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
