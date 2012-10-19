@@ -10,17 +10,26 @@
 
 	let g:Powerline_loaded = 1
 " }}}
+" Commands {{{
+	command! PowerlineClearCache call Pl#ClearCache()
+	command! PowerlineReloadColorscheme call Pl#ReloadColorscheme()
+" }}}
 " Set default options {{{
 	for [s:key, s:value] in items({
-		\   'theme'        : 'distinguished'
-		\ , 'colorscheme'  : 'distinguished'
-		\ , 'symbols'      : 'compatible'
-		\ , 'cache_enabled': 1
+		\   'theme'            : 'default'
+		\ , 'colorscheme'      : 'default'
+		\ , 'symbols'          : 'compatible'
+		\ , 'symbols_override' : {}
+		\ , 'dividers_override': []
+		\ , 'stl_path_style'   : 'relative'
+		\ , 'cache_enabled'    : 1
 		\ })
 
 		if ! exists('g:Powerline_' . s:key)
 			exec printf('let g:Powerline_%s = %s', s:key, string(s:value))
 		endif
+
+		unlet! s:key s:value
 	endfor
 
 	if ! exists('g:Powerline_cache_file')
@@ -33,17 +42,28 @@
 	endif
 " }}}
 " Autocommands {{{
-	augroup Powerline
+	function! s:CreateAutocmds()
+		augroup PowerlineMain
+			autocmd!
+
+			" Reload statuslines when changing color scheme
+			autocmd ColorScheme *
+				\ call Pl#Load()
+
+			autocmd BufEnter,WinEnter,FileType,BufUnload *
+				\ call Pl#UpdateStatusline(1)
+
+			autocmd BufLeave,WinLeave *
+				\ call Pl#UpdateStatusline(0)
+
+			autocmd BufWritePost */autoload/Powerline/Colorschemes/*.vim
+				\ :PowerlineReloadColorscheme
+		augroup END
+	endfunction
+
+	augroup PowerlineStartup
 		autocmd!
 
-		" Reload statuslines when changing color scheme
-		au ColorScheme *
-			\ call Pl#Load()
-
-		au BufEnter,WinEnter,FileType,BufUnload *
-			\ call Pl#UpdateStatusline(1)
-
-		au BufLeave,WinLeave *
-			\ call Pl#UpdateStatusline(0)
+		autocmd VimEnter * call s:CreateAutocmds() | call Pl#UpdateStatusline(1)
 	augroup END
 " }}}
