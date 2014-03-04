@@ -32,7 +32,7 @@ If you want to use my setup:
 
     git clone https://github.com/kpanic/dotvim-python-ide.git $HOME/.vim
 
-    ln -s $HOME/.vimrc $HOME/.vim/vimrc
+    ln -s $HOME/.vim/vimrc $HOME/.vimrc
 
 
 to install pysmell just:
